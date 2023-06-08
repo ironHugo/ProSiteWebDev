@@ -1,0 +1,23 @@
+/* Resolución para dispositivos muy pequeños. 0-319 x 480 */
+@media(max-width: 319px){ 
+    /*body{background: red;}*/
+
+    #panCom {width: 320px; 
+        height: 171px;
+        z-index: 1;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #panCom video { width: 320px; /* 1.871345*/
+        height: 171px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        
+    }
+    #comPan { width: 320px;
+        height: 200px;
+        background: black;
+        margin: 0 auto;
+    }
+}

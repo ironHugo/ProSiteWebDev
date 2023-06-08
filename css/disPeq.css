@@ -1,0 +1,285 @@
+/* Resolución para dispositivos moviles pequeños. 320 x 480 */
+@media(min-width: 320px) and (max-width: 479px) {
+    /*body{background: orange;}*/
+
+    #panCom {width: 320px; 
+        height: 171px;
+        z-index: 1;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #panCom video { width: 320px; /* 1.871345*/
+        height: 171px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        margin-top:57px;
+    }
+
+    
+     /* ----------------------Cuerpo superior --------------------- */
+
+     header { width: 100%;
+        height: 97px;
+        background-color: transparent;
+    }
+    /*----- Barra superior -----*/
+
+        div#supIzq { text-align: center;
+            height: inherit;
+            float: left;
+            margin-left: 9px;
+            padding-top: 7px;
+            padding-left: 7px;
+            width: 160px;
+            
+        }
+        div#supDer { width: 35%;
+            text-align: right;
+            float: right;
+            margin-right: 22px;
+            height: inherit;
+            padding-top: 15px;
+        }
+        div#supDer a {font-size: 12px;}
+        p#contacto { font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+        
+        p#contacto a {text-decoration: none;
+            color: white;
+        }
+        #barSup { width: 100%;
+            height: 57px;
+            background-color: black;
+        }
+
+        a.fac{ background: #868d9c;
+            color: white;
+            padding: 2px 5.5px;
+        }
+        a.twi{ background: #1da1f2;
+            color: white;
+            padding: 2px 3px;
+        }
+        a.gop{ background: #34a853;
+            color: white;
+            padding: 2px 1.5px;
+        }
+        a.lin{ background: #0077b5;
+            color: white;
+            padding: 2px 3.75px;
+        }
+        a.pin{ background: #bd081c;
+            color: white;
+            padding: 2px 5.25px;
+        }
+
+        /*----- Barra inferior -----*/
+        div#barInf {width: 100%;
+            height: 29px;
+            color: white;
+            border: 1px solid white;
+            background: linear-gradient(black, transparent, transparent);
+        }
+
+        div#logFig {width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: radial-gradient(red, blue);
+            font: bold 10px elfont;
+            text-align: center;
+            line-height: 25px;
+            color: yellow;
+            box-shadow: 5px 5px 15px black;
+            
+        }
+        div#logo { font: normal 30px miFont;
+            text-shadow: 5px 5px 15px white;
+            position: relative;
+            top: -26px;
+            left: 28px;
+            display: inline;
+        }
+
+        /* ---- Barra de navegación --- */
+        nav {position: relative;
+            float: right;
+            top: -26px;
+            right: 6px;
+            width: 130px;
+            text-align: right;
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        nav ul li {display: block;
+            list-style: none;
+            margin: 0;
+            padding-top: 0;
+            border: 1px solid white;
+            z-index: 10;
+        }
+
+        nav ul li#menCol {visibility: visible;
+        }
+        li#menCol img { 
+            height: 18px;
+            width: 18px;
+            
+        }
+        nav ul li#menCol:hover {
+            
+        }
+        nav ul li a {color:white;
+            font: bold 11px verdana;
+            text-decoration: none;
+            padding: 1px 2px;
+            padding-top: 0;
+            margin-right: 2px;
+            width: 100%;
+        }
+        nav ul li a[href="#"] { /*background: green;*/
+            border: 1px solid white;
+            border-radius: 4px;
+            box-shadow: 3px 3px 15px orange;
+            
+        }
+        nav ul li a:hover {color: white;}
+        nav ul li a[href="#"]:hover { color: white;
+            cursor:default;
+        }
+
+        /* -------------- Cuerpo ----------------- */
+        section { width: 480px;
+            height: 193px;
+            position: absolute;
+            overflow: hidden;
+            
+            margin-top: -12px;
+        }
+
+        section div {margin-top: 40px; 
+            width: 735px;
+            color: white;
+            height: 150px;
+           margin-left: 768px;
+           position: absolute;
+           opacity: 0;
+           
+        }
+        section div h1 {font: bold 21px arial;
+            margin-left: 18px;
+        }
+        section div p { font: normal 12px arial;
+            width: 300px;
+        }
+        section div p a.botBan{ background: #82B440;
+            text-decoration: none;
+            padding: 2.5px 9px;
+            color: white;
+            margin-left: 14px;
+            position: relative;
+        }
+        
+        
+        #sliUno { 
+            animation-name: priSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliDos { 
+            animation-name: segSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliTre {
+            animation-name: terSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliCua { 
+            animation-name: cuaSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliQui { 
+            animation-name: quiSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        
+        @keyframes priSli {
+            4% {margin-left: 1280px; }
+            5.5% {opacity: 0;}
+            8% {margin-left: 15px; opacity: 1;}
+            16% {margin-left: 15px; opacity: 1;}
+            18.5% {opacity: 0;}
+            20% {margin-left: 1280px; }
+            100% {margin-left: 1280px;}
+        }
+        @keyframes segSli {
+            24% {margin-left: 1280px; }
+            25.5% {opacity: 0;}
+            28% {margin-left: 15px; opacity: 1;}
+            36% {margin-left: 15px; opacity: 1;}
+            38.5% {opacity: 0;}
+            40% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes terSli {
+            44% {margin-left: 1280px;}
+            45.5% {opacity: 0;}
+            48% {margin-left: 15px; opacity: 1;}
+            56% {margin-left: 15px; opacity: 1;}
+            58.5% {opacity: 0;}
+            60% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes cuaSli { 
+            64% {margin-left: 1280px;}
+            65.5% {opacity: 0;}
+            68% {margin-left: 15px; opacity: 1;}
+            76% {margin-left: 15px; opacity: 1;}
+            78.5% {opacity: 0;}
+            80% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes quiSli { 
+            84% {margin-left: 1280px;}
+            85.5% {opacity: 0;}
+            88% {margin-left: 15px; opacity: 1;}
+            96% {margin-left: 15px; opacity: 1;}
+            98.5% {opacity: 0;}
+            100% {margin-left: 1280px;}
+        }
+        
+
+
+    /* ----------------------Cuerpo inferior --------------------- */
+
+    #comPan { width: 320px;
+        height: 200px;
+        background: black;
+        margin: 0 auto;
+    }
+}

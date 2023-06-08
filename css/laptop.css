@@ -1,0 +1,352 @@
+/* Resolución para laptop. 1024 x 768 */
+
+@media(min-width: 1024px) and (max-width: 1279px) {
+
+    #panCom {width: 1024px; 
+        height: 547px;
+        z-index: 1;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #panCom video { width: 1024px; /* 1.871345*/
+        height: 547px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        opacity: 0.5;
+    }
+
+     /* ----------------------Cuerpo superior --------------------- */
+
+     header { width: 100%;
+        height: 130px;
+        background-color: transparent;
+    }
+    /*----- Barra superior -----*/
+
+        div#supIzq { width: 35%;
+            height: inherit;
+            float: left;
+            margin-left: 30px;
+            padding-top: 20px;
+            width: 460px;
+        }
+        div#supDer { width: 35%;
+            text-align: right;
+            float: right;
+            margin-right: 30px;
+            height: inherit;
+            padding-top: 21px;
+        }
+        p#contacto { font-size: 21px;
+            color: white;
+        }
+        p#contacto a {text-decoration: none;
+            color: white;
+        }
+        #barSup { width: 100%;
+            height: 76px;
+            background-color: black;
+        }
+
+        a.fac{ background: #868d9c;
+            color: white;
+            padding: 2px 7px;
+        }
+        a.twi{ background: #1da1f2;
+            color: white;
+            padding: 2px 4px;
+        }
+        a.gop{ background: #34a853;
+            color: white;
+            padding: 2px 2px;
+        }
+        a.lin{ background: #0077b5;
+            color: white;
+            padding: 2px 5px;
+        }
+        a.pin{ background: #bd081c;
+            color: white;
+            padding: 2px 7px;
+        }
+
+        /*----- Barra inferior -----*/
+        div#barInf {width: 100%;
+            height: 54px;
+            color: white;
+        }
+
+        div#logFig {width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: radial-gradient(red, blue);
+            font: bold 23px elfont;
+            text-align: center;
+            line-height: 54px;
+            color: yellow;
+            box-shadow: 5px 5px 15px black;
+            
+        }
+        div#logo { font: normal 60px miFont;
+            text-shadow: 5px 5px 15px white;
+            position: relative;
+            top: -54px;
+            left: 60px;
+            display: inline;
+        }
+
+        /* ---- Barra de navegación --- */
+        nav {position: relative;
+            float: right;
+            top: -30px;
+            right: 20px;
+        }
+        
+        nav ul li {display: inline;
+            list-style: none;
+        }
+
+        nav ul li#menCol {visibility: hidden;
+        }
+        li#menCol img { 
+            height: 5px;
+            width: 5px;
+            
+        }
+        nav ul li a {color:white;
+            font: bold 20px verdana;
+            text-decoration: none;
+            padding: 2px 15px;
+            margin-left: 10px;
+        }
+        nav ul li a[href="#"] { /*background: green;*/
+            border: 1px solid white;
+            border-radius: 4px;
+            box-shadow: 3px 3px 15px orange;
+            
+        }
+        nav ul li a:hover {color: white;}
+        nav ul li a[href="#"]:hover { color: white;
+            cursor:default;
+        }
+
+        /* -------------- Cuerpo ----------------- */
+        section { width: 1024px;
+            height: 375px;
+            overflow: hidden;
+        }
+
+        section div {margin-top: 88px; 
+            width: 1250px;
+            color: white;
+            height: 200px;
+           margin-left: 1280px;
+           position: absolute;
+           opacity: 0;
+           
+        }
+        section div h1 {font: bold 45px arial;
+            margin-left: 30px;
+        }
+        section div p { font: normal 22px verdana;
+            width: 625px;
+        }
+        section div p a.botBan{ background: #82B440;
+            text-decoration: none;
+            padding: 5px 20px;
+            color: white;
+            margin-left: 30px;
+            position: relative;
+        }
+        
+        
+        #sliUno { 
+            animation-name: priSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliDos { 
+            animation-name: segSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliTre {
+            animation-name: terSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliCua { 
+            animation-name: cuaSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliQui { 
+            animation-name: quiSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        
+        @keyframes priSli {
+            4% {margin-left: 1280px; }
+            5.5% {opacity: 0;}
+            8% {margin-left: 15px; opacity: 1;}
+            16% {margin-left: 15px; opacity: 1;}
+            18.5% {opacity: 0;}
+            20% {margin-left: 1280px; }
+            100% {margin-left: 1280px;}
+        }
+        @keyframes segSli {
+            24% {margin-left: 1280px; }
+            25.5% {opacity: 0;}
+            28% {margin-left: 15px; opacity: 1;}
+            36% {margin-left: 15px; opacity: 1;}
+            38.5% {opacity: 0;}
+            40% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes terSli {
+            44% {margin-left: 1280px;}
+            45.5% {opacity: 0;}
+            48% {margin-left: 15px; opacity: 1;}
+            56% {margin-left: 15px; opacity: 1;}
+            58.5% {opacity: 0;}
+            60% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes cuaSli { 
+            64% {margin-left: 1280px;}
+            65.5% {opacity: 0;}
+            68% {margin-left: 15px; opacity: 1;}
+            76% {margin-left: 15px; opacity: 1;}
+            78.5% {opacity: 0;}
+            80% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes quiSli { 
+            84% {margin-left: 1280px;}
+            85.5% {opacity: 0;}
+            88% {margin-left: 15px; opacity: 1;}
+            96% {margin-left: 15px; opacity: 1;}
+            98.5% {opacity: 0;}
+            100% {margin-left: 1280px;}
+        }
+        
+
+
+    /* ----------------------Cuerpo inferior --------------------- */
+
+    #comPan { width: 1024px;
+        height: 250px;
+        background: black;
+        margin: 0 auto;
+    }
+
+    /* -------- links -------- */
+    .links { background: #2F3640;
+        color: #0D6EFD;
+        font-size: 18px;
+        padding: 25px 0;
+        text-align: center;
+        height: 180px;
+    }
+    .links ul {  width: 250px;
+        display: inline-block;
+        margin: 0 25px;
+        text-align: left;
+    }
+    .links  ul li {list-style-type: none;}
+    .links  ul li a {text-decoration: none;}
+    
+
+    footer {text-align: center;
+        color: white;
+        padding-top: 15px;
+        height: 70px;
+    }
+    footer p {padding: 0;
+        margin: 0;
+        font: bold 15px "BankGothic Md BT";
+        color: gray;
+    }
+
+
+    /*-------Página misTra.html---------------*/
+    #conTra { text-align: center;
+        padding-top: 6px;
+        color: white;
+    }
+    #conTra article { width: 240px;
+        height: 360px;
+        display: inline-block;
+        margin: 0 4px;
+    }
+
+    #conTra article h3 { font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 3px 3px 15px white;
+        font-size: 24px;
+    }
+    #conTra article img { width: 240px;
+        height: 120px;
+        margin: 12px 0;
+    }
+    #conTra article p { font: normal 13px arial;
+        margin-bottom: 8px;
+    }
+    
+        /*-------------------Página misTra.html-----------------------*/
+
+        #conSer { width: 1024px;
+            height: 375px;
+            
+        }
+        #conSer img { width: 480px;
+            height: 192px;
+            display:inline-block;
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+    
+        #conSer div { display: block;
+            opacity: 1;
+            width: 360px;
+            height: 72px;
+        }
+        #conSer #serUno {top: 107px;
+            left: -708px;
+        }
+        #conSer #serDos {top: 194px;
+            left: -667px;
+        }
+        #conSer #serTre {top: 281px;
+            left: -636px;
+        }
+        #conSer #serCua {top: 368px;
+            left: -667px;
+        }
+        #conSer div h4 { padding-bottom: 2px;
+            border-bottom: 2px solid blue;
+            font-size: 20px;
+        }
+        #conSer div p { font: normal 12px Verdana;
+            width: 100%;
+            
+        }
+}

@@ -1,0 +1,394 @@
+/* Resolución para dispositivos smartphone. 480 x 320 */
+@media(min-width: 480px) and (max-width: 767px) {
+    /*body{background: yellow;}*/
+
+    #panCom {width: 480px; 
+        height: 256px;
+        z-index: 1;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #panCom video { width: 480px; /* 62.5*/
+        height: 256px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        opacity: 0.5;
+        margin-top: 57px;
+    }
+
+     /* ----------------------Cuerpo superior --------------------- */
+
+     header { width: 100%;
+        height: 97px;
+        background-color: transparent;
+    }
+    /*----- Barra superior -----*/
+
+        div#supIzq { text-align: center;
+            height: inherit;
+            float: left;
+            margin-left: 9px;
+            padding-top: 7px;
+            padding-left: 7px;
+            width: 160px;
+            
+        }
+        div#supDer { width: 35%;
+            text-align: right;
+            float: right;
+            margin-right: 22px;
+            height: inherit;
+            padding-top: 15px;
+        }
+        div#supDer a {font-size: 12px;}
+        p#contacto { font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+        
+        p#contacto a {text-decoration: none;
+            color: white;
+        }
+        #barSup { width: 100%;
+            height: 57px;
+            background-color: black;
+        }
+
+        a.fac{ background: #868d9c;
+            color: white;
+            padding: 2px 5.5px;
+        }
+        a.twi{ background: #1da1f2;
+            color: white;
+            padding: 2px 3px;
+        }
+        a.gop{ background: #34a853;
+            color: white;
+            padding: 2px 1.5px;
+        }
+        a.lin{ background: #0077b5;
+            color: white;
+            padding: 2px 3.75px;
+        }
+        a.pin{ background: #bd081c;
+            color: white;
+            padding: 2px 5.25px;
+        }
+
+        /*----- Barra inferior -----*/
+        div#barInf {width: 100%;
+            height: 29px;
+            color: white;
+            
+        }
+
+        div#logFig {width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: radial-gradient(red, blue);
+            font: bold 10px elfont;
+            text-align: center;
+            line-height: 25px;
+            color: yellow;
+            box-shadow: 5px 5px 15px black;
+            
+        }
+        div#logo { font: normal 30px miFont;
+            text-shadow: 5px 5px 15px white;
+            position: relative;
+            top: -26px;
+            left: 28px;
+            display: inline;
+        }
+
+        /* ---- Barra de navegación --- */
+        nav {position: relative;
+            float: right;
+            top: -26px;
+            right: 6px;
+            width: 300px;
+            text-align: right;
+            height: 29px;
+            
+        }
+        
+        nav ul li {display: inline;
+            list-style: none;
+        }
+        nav ul li#menCol {visibility: hidden;
+        }
+        li#menCol img { 
+            height: 5px;
+            width: 5px;
+            
+        }
+        nav ul li a {color:white;
+            font: bold 11px verdana;
+            text-decoration: none;
+            padding: 2px 6px;
+            margin-left: 6px;
+        }
+        nav ul li a[href="#"] { /*background: green;*/
+            border: 1px solid white;
+            border-radius: 4px;
+            box-shadow: 3px 3px 15px orange;
+            
+        }
+        nav ul li a:hover {color: white;}
+        nav ul li a[href="#"]:hover { color: white;
+            cursor:default;
+        }
+
+        /* -------------- Cuerpo ----------------- */
+        section { width: 480px;
+            height: 193px;
+            position: absolute;
+            overflow: hidden;
+            
+            margin-top: -12px;
+        }
+
+        section div {margin-top: 40px; 
+            width: 735px;
+            color: white;
+            height: 150px;
+           margin-left: 768px;
+           position: absolute;
+           opacity: 0;
+           
+        }
+        section div h1 {font: bold 21px arial;
+            margin-left: 18px;
+        }
+        section div p { font: normal 12px arial;
+            width: 300px;
+        }
+        section div p a.botBan{ background: #82B440;
+            text-decoration: none;
+            padding: 2.5px 9px;
+            color: white;
+            margin-left: 14px;
+            position: relative;
+        }
+        
+        
+        #sliUno { 
+            animation-name: priSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliDos { 
+            animation-name: segSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        #sliTre {
+            animation-name: terSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliCua { 
+            animation-name: cuaSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #sliQui { 
+            animation-name: quiSli;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        
+        @keyframes priSli {
+            4% {margin-left: 1280px; }
+            5.5% {opacity: 0;}
+            8% {margin-left: 15px; opacity: 1;}
+            16% {margin-left: 15px; opacity: 1;}
+            18.5% {opacity: 0;}
+            20% {margin-left: 1280px; }
+            100% {margin-left: 1280px;}
+        }
+        @keyframes segSli {
+            24% {margin-left: 1280px; }
+            25.5% {opacity: 0;}
+            28% {margin-left: 15px; opacity: 1;}
+            36% {margin-left: 15px; opacity: 1;}
+            38.5% {opacity: 0;}
+            40% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes terSli {
+            44% {margin-left: 1280px;}
+            45.5% {opacity: 0;}
+            48% {margin-left: 15px; opacity: 1;}
+            56% {margin-left: 15px; opacity: 1;}
+            58.5% {opacity: 0;}
+            60% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes cuaSli { 
+            64% {margin-left: 1280px;}
+            65.5% {opacity: 0;}
+            68% {margin-left: 15px; opacity: 1;}
+            76% {margin-left: 15px; opacity: 1;}
+            78.5% {opacity: 0;}
+            80% {margin-left: 1280px;}
+            100% {margin-left: 1280px;}
+        }
+        @keyframes quiSli { 
+            84% {margin-left: 1280px;}
+            85.5% {opacity: 0;}
+            88% {margin-left: 15px; opacity: 1;}
+            96% {margin-left: 15px; opacity: 1;}
+            98.5% {opacity: 0;}
+            100% {margin-left: 1280px;}
+        }
+        
+
+
+    /* ----------------------Cuerpo inferior --------------------- */
+
+
+    #comPan { width: 480px;
+        height: 200px;
+        background: black;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+
+    
+    /* -------- links -------- */
+    .links { background: #2F3640;
+        color: #0D6EFD;
+        font-size: 10px;
+        padding: 35px 0;
+        text-align: center;
+        height: 135px;
+    }
+    .links ul {  width: 146px;
+        display: inline-block;
+        margin: 0 2px;
+        text-align: left;
+        
+    }
+    .links ul li {list-style-type: none;}
+    .links ul li h3 {font-size: 12px;}
+    .links ul li a {text-decoration: none;}
+    
+
+    footer {text-align: center;
+        color: white;
+        padding-top: 15px;
+        height: 70px;
+    }
+    footer p {padding: 0;
+        margin: 0;
+        font: bold 12px "BankGothic Md BT";
+        color: gray;
+    }
+
+
+    /*-------Página mis trabajjos.html---------------*/
+    #conTra { text-align: center;
+        padding-top: 15px;
+        color: white;
+        
+        overflow: auto;
+    }
+    #conTra article { width: 450px;
+        height: 165px;
+        display: inline-block;
+        margin: 5px 4px;
+        border-bottom: 1px solid blue;
+    }
+
+    #conTra article h3 { font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 3px 3px 15px white;
+        font-size: 18px;
+        
+        width: 216px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    #conTra article img { width: 216px;
+        height: 108px;
+        margin: 2px 0;
+        
+        display: block;
+        position: absolute;
+    }
+    #conTra article p { font: normal 11.5px arial;
+        margin-bottom: 2px;
+        top: -25px;
+        
+        width: 225px;
+        float: right;
+        position: relative;
+    }
+    #conTra article a { clear: both;
+        font-size: 11px;
+        float: right;
+        position: relative;
+        right: 90px;
+        top: -20px
+    }
+        /*-------------------Página misTra.html-----------------------*/
+
+        #conSer { width: 480px;
+            height: 193px;
+            
+        }
+        #conSer img { width: 133px;
+            height: 53px;
+            display:inline-block;
+            margin-top: 93px;
+            margin-left: 18px;
+        }
+    
+        #conSer div { display: block;
+            opacity: 1;
+            width: 280px;
+            height: 54px;
+            
+        }
+        #conSer #serUno {top: -33.4px;
+            left: -668px;
+        }
+        #conSer #serDos {top: 12px;
+            left: -627px;
+        }
+        #conSer #serTre {top: 59.4px;
+            left: -596px;
+        }
+        #conSer #serCua {top: 105.8px;
+            left: -627px;
+        }
+        #conSer div h4 { padding-bottom: 1.5px;
+            border-bottom: 2px solid blue;
+            font-size: 11px;
+        }
+        #conSer div p { font: normal 11px arial;
+            width: 100%;
+           margin-top: -6px;
+        }
+
+}
